@@ -1,38 +1,13 @@
-body{
-    background-color: aliceblue;
+.navbar-toggler:focus {
+    border: 0 !important;
+    box-shadow: none !important;  
 }
 
-#head{
-    text-align: center;
+.navbar-toggler {
+     border: 0 !important;
 }
 
-#body{
-    background-color: white;
-    padding: 10px;
-    width: 500px;
-    height: 100px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    box-shadow:darkgrey;
-}
-
-#link{
-    background-color: white;
-    padding: 10px;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-#link a{
-    text-decoration: none;
-    padding: 10px;
-}
-
-#link a:hover{
-    background-color: aliceblue;
-    cursor::pointer;
+img{
+    width: 150px;
+    height: 150px;
 }
