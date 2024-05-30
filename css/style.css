@@ -15,3 +15,7 @@ img{
 .card {
     max-width: 381.432px; max-height: 441.012px;
 }
+
+.container{
+    padding: 0 7% 0 7%;
+}
