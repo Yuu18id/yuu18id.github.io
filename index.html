@@ -2,106 +2,201 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuu18id</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuu18id — Android & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <div class="container pb-5">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand text-black" href="#">YUU18ID</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Works</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#">
-              Links
-            </a>
-          </li>
-        </ul>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">YUU18ID</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Works</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">Available for freelance &amp; internship</p>
+      <h1 class="hero-name">Yuu18id<span>.</span><br>Developer</h1>
+      <p class="hero-tagline">
+        Android &amp; Web developer building interactive apps focused on usability and clean code.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View my work ↓</a>
+        <a href="https://github.com/Yuu18id" target="_blank" class="btn btn-outline">GitHub</a>
       </div>
-    </nav>
-  </div>
-  <div class="py-5" style="width: 77%; width: auto;">
-    <div class="d-flex flex-wrap">
-      <p class="fw-bold mx-auto text-center" style="font-size: 300%;">STUDENT, MOBILE, AND WEB DEVELOPER</p>
-      <!-- <img class="rounded-circle d-block mx-auto" src="https://avatars.githubusercontent.com/yuu18id" alt=""> -->
     </div>
-  </div>
-  <div class="container">
-    <p class=" fs-3 text-center pt-5">WORKS</p>
-    <div class="d-flex flex-wrap align-items-center mb-5">
-      <div class="row gap-5">
-        <div class="card mt-4 mx-auto">
-          <img src="https://github.com/Yuu18id/resources/blob/main/_C__Users_USER_Desktop_Project%2520Pribadi_flappybird_index.Ahtml(Samsung%20Galaxy%20S20%20Ultra)%20(4).png?raw=true" class="card-img-top img-fluid pt-3"
-            style="width: 25rem;" alt="W Jump" />
-          <div class="card-body">
-            <h5 class="card-title">W Jump</h5>
-            <p class="card-text">Avoiding pipes game like <i>Flappy Bird</i> with <i>W</i>
-            </p>
-          </div>
-          <a class="btn btn-dark btn-sm flex p-2" href="https://github.com/Yuu18id/wjumpweb.github.io"
-            style="margin-left: 75%; margin-bottom: 3%; margin-top: 5%;" target="_blank">Repository</a>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="section-label reveal">Selected works</p>
+    <h2 class="section-title reveal">What I've built</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <h3 class="project-title">Yuu18id Studio</h3>
+        <p class="project-desc">
+          Minecraft skin & pixel art commission studio — featuring a 3D skin viewer,
+          portfolio gallery with filter, and service showcase.
+        </p>
+        <div class="project-stack">
+          <span class="tag">Landing Page</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">skinview3d</span>
+          <span class="tag">AOS</span>
         </div>
-        
-        <div class="card mt-4 mx-auto">
-          <img src="https://th.bing.com/th/id/OIP.nVKRJulYkeBXgIGKXPX8XAHaEK?pid=ImgDet&rs=1" class="card-img-top img-fluid pt-3"
-            style="width: 25rem;" alt="C.AI" />
-          <div class="card-body ">
-            <h5 class="card-title">Character.AI Telegraf Chatbot</h5>
-            <p class="card-text">Telegram chatbot created using <i>telegraf</i> and <i>node-characterai</i>
-            </p>
-          </div>
-          <a class="btn btn-dark btn-sm end-0 p-2" href="https://github.com/Yuu18id/character-ai-telegraf-chatbot"
-            style="margin-left: 75%; margin-bottom: 3%;" target="_blank">Repository</a>
+
+        <div class="project-actions">
+          <a href="https://yuu18idstudio.vercel.app/" target="_blank" class="btn btn-demo">Live Demo</a>
+          <a href="https://github.com/Yuu18id/yuu18idstudio" target="_blank" class="btn btn-outline">GitHub</a>
         </div>
+      </div>
+
+      <div class="project-card reveal">
+        <h3 class="project-title">AI Image Classifier</h3>
+        <p class="project-desc">
+          A web application for image classification using Vision Transformer (ViT) with Error Level Analysis (ELA) preprocessing.
+        </p>
+        <div class="project-stack">
+
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Pytorch</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://github.com/Yuu18id/vit-ela-ai-image-classifier" target="_blank" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <h3 class="project-title">C.AI Telegraf Chatbot</h3>
+        <p class="project-desc">
+          Telegram bot that bridges users with Character.AI characters — powered by Telegraf
+          and the node-characterai library for real-time AI conversations.
+        </p>
+        <div class="project-stack">
+
+          <span class="tag">Node.js</span>
+          <span class="tag">Telegraf</span>
+          <span class="tag">Character.AI</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://github.com/Yuu18id/character-ai-telegraf-chatbot" target="_blank"
+            class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Placeholder card — "More coming soon" -->
+      <div class="project-card reveal"
+        style="justify-content:center;align-items:center;text-align:center;min-height:320px;border:1.5px dashed var(--border);background:transparent;">
+        <p
+          style="font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase;">
+          More projects coming soon</p>
+      </div>
+
     </div>
-  </div>
-  <footer class="text-center pt-5">
-    <div>
-      <a href="" target="_blank" class="me-4 text-reset">
-        <i class=" bi-facebook-f"></i>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="section-label reveal">What I work with</p>
+    <h2 class="section-title reveal">Skills &amp; Tools</h2>
+    <div class="skills-list reveal">
+      <span class="skill-pill">HTML &amp; CSS</span>
+      <span class="skill-pill">JavaScript</span>
+      <span class="skill-pill">Node.js</span>
+      <span class="skill-pill">Bootstrap</span>
+      <span class="skill-pill">Python</span>
+      <span class="skill-pill">Pytorch</span>
+      <span class="skill-pill">Android (Kotlin/Java)</span>
+      <span class="skill-pill">Git &amp; GitHub</span>
+      <span class="skill-pill">REST APIs</span>
+      <span class="skill-pill">Telegram Bots</span>
+      <span class="skill-pill">Vercel</span>
+      <span class="skill-pill">GitHub Pages</span>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <p class="section-label reveal">Let's connect</p>
+    <h2 class="section-title reveal">Find me here</h2>
+    <div class="contact-row reveal">
+      <a class="contact-link" href="https://github.com/Yuu18id" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        GitHub
       </a>
-      <a href="" target="_blank" class="me-4 text-reset">
-        <i class=" bi-twitter"></i>
+      <a class="contact-link" href="https://id.linkedin.com/in/bayu-arma-praja" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+        LinkedIn
       </a>
-      <a href="" target="_blank" class="me-4 text-reset">
-        <i class=" bi-google"></i>
-      </a>
-      <a href="" target="_blank" class="me-4 text-reset">
-        <i class=" bi-instagram"></i>
-      </a>
-      <a href="https://id.linkedin.com/in/bayu-arma-praja" target="_blank" class="me-4 text-reset">
-        <i class=" bi-linkedin"></i>
-      </a>
-      <a href="https://github.com/Yuu18id" target="_blank" class="me-4 text-reset">
-        <i class=" bi-github"></i>
+      <a class="contact-link" href="mailto:bayuarmapraja06@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        Email
       </a>
     </div>
-    <div class="text-center p-4">
-      © 2024 Yuu18id, All rights reserved.</span>
-    </div>
-    <!-- Copyright -->
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">YUU18ID</span>
+    <span class="footer-copy">© 2026 Bayu Arma Praja. All rights reserved.</span>
   </footer>
-  <!-- Footer -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+
+  <script>
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          // stagger siblings
+          const siblings = [...e.target.parentElement.querySelectorAll('.reveal')];
+          const idx = siblings.indexOf(e.target);
+          e.target.style.transitionDelay = `${idx * 0.08}s`;
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+  </script>
 </body>
 
 </html>
